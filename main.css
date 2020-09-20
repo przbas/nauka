@@ -1,0 +1,210 @@
+body
+{
+    background-image: url(tweed.png); /* Background pattern from subtlepatterns.com */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+header
+{
+    padding: 10px;
+    font-size: 40px;
+}
+
+#logo
+{
+
+    text-align: left;
+}
+
+#zegar
+{
+
+    text-align: right;
+}
+
+.tile1, .tile2, .tile3
+{
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    height: fit-content;
+}
+
+.tile1
+{
+    background-color: #3095d3;
+}
+
+.tile1:hover
+{
+    background-color: #2085c3;
+}
+
+.tile2
+{
+    background-color: #666666;
+}
+
+.tile2:hover
+{
+    background-color: #565656;
+}
+
+.tile3
+{
+    background-color: #93c748;
+}
+
+.tile3:hover
+{
+    background-color: #83b738;
+}
+
+.tile4
+{
+    margin: 5px;
+    background-color: #ee5a32;
+    text-align: center;
+    padding: 10px;
+}
+
+.tile5
+{
+    margin: 5px;
+    background-color: #666666;
+    padding: 20px;
+    text-align: justify;
+    height: max-content;
+}
+
+a
+{
+    text-decoration: unset;
+    color: white;
+}
+
+footer
+{
+    text-align: center;
+    background-color: darkolivegreen;
+    padding: 15px;
+    margin: 0px 15px;
+}
+
+[class*="icon-"]
+{
+    font-size: 20px; margin-top: 20px; margin-bottom: 10px;
+}
+
+input[type=text], input[type=number]
+{
+    width: 200px;
+    background-color: #efefef;
+    color: #666;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 7px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 5px;
+}
+
+input[type=text]:focus, input[type=number]:focus
+{
+    border: 2px solid #a5cda5;
+    background-color: #e9f3e9;
+    color: #428c42;
+}
+
+input[type=submit]
+{
+    width: 100px;
+    background-color: #36b03c;
+    font-size: 15px;
+    color: white;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 5px;
+    margin-left: 10px;
+    
+}
+
+input[type=submit]:hover
+{
+    background-color: #37b93d;
+    
+}
+
+select
+{
+    width: 250px;
+    background-color: #efefef;
+    color: #666;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 7px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 5px;
+}
+
+#dalej
+{
+    display: none;
+}
+
+
+
+/* Response */
+
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+}
+
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+.vis
+{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%; height: fit-content}
+    .col-2 {width: 16.66%; height: fit-content;}
+    .col-3 {width: 25%; height: fit-content;}
+    .col-4 {width: 33.33%; height: fit-content;}
+    .col-5 {width: 41.66%; height: fit-content;}
+    .col-6 {width: 50%; height: fit-content;}
+    .col-7 {width: 58.33%; height: fit-content;}
+    .col-8 {width: 66.66%; height: fit-content;}
+    .col-9 {width: 75%; height: fit-content;}
+    .col-10 {width: 83.33%; height: fit-content;}
+    .col-11 {width: 91.66%; height: fit-content;}
+    .col-12 {width: 100%; height: fit-content;}
+    .vis {display: block;}
+    [class*="icon-"] { font-size: 72px; margin-top: 20px; margin-bottom: 10px;}
+    header {font-size: 58px;}
+}
+
