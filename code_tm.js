@@ -7,9 +7,9 @@ function ustaw()
 {
     var li = document.getElementById("zakres").value;
     var id = 0;
-    if (li == "od 4 do 25") id=1;
-    if (li == "od 27 do 50") id=2;
-    if (li == "od 54 do 100") id=3;
+    if (li == "od 2x2 do 5x5") id=1;
+    if (li == "od 2x6 do 5x10") id=2;
+    if (li == "od 6x6 do 10x10") id=3;
    
     setTimeout("generuj_"+id+"()",100);
     document.getElementById("score").innerHTML = "Wynik: [ 0 / 0 ]";
@@ -50,21 +50,21 @@ function wyswietl()
 
 function generuj_1()
 {
-    var lista = [2,2,2,3,2,4,2,5,2,6,2,7,2,8,2,9,2,10,3,3,3,4,3,5,3,6,3,7,3,8,4,4,4,5,4,6,5,5];
+    var lista = [2,2,2,3,2,4,2,5,3,2,3,3,3,4,3,5,4,2,4,3,4,4,4,5,5,2,5,3,5,4,5,5];
     g_list = generuj(lista);
     wyswietl();
 }
 
 function generuj_2()
 {
-    var lista = [3,9,3,10,4,7,4,8,4,9,4,10,5,6,5,7,5,8,5,9,5,10,6,6,6,7,6,8,7,7];
+    var lista = [2,6,2,7,2,8,2,9,2,10,3,6,3,7,3,8,3,9,3,10,4,6,4,7,4,8,4,9,4,10,5,6,5,7,5,8,5,9,5,10,6,2,6,3,6,4,6,5,7,2,7,3,7,4,7,5,8,2,8,3,8,4,8,5,9,2,9,3,9,4,9,5,10,2,10,3,10,4,10,5];
     g_list = generuj(lista);
     wyswietl();
 }
 
 function generuj_3()
 {
-    var lista = [6,9,6,10,7,8,7,9,7,10,8,8,8,9,8,10,9,9,9,10,10,10];
+    var lista = [6,6,6,7,6,8,6,9,6,10,7,6,7,7,7,8,7,9,7,10,8,6,8,7,8,8,8,9,8,10,9,6,9,7,9,8,9,9,9,10,10,6,10,7,10,8,10,9,10,10];
     g_list = generuj(lista);
     wyswietl();
 }
