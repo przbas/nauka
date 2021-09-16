@@ -58,13 +58,13 @@ function sprawdz()
         if(lp == 20) {
             var ocena = "5";
             if(l<= 10) ocena = "2";
-            else if (l==11) ocena = "-3";
+            else if (l==11) ocena = "3-";
             else if (l>=12 && l<=13) ocena = "3";
-            else if (l==14) ocena = "+3";
-            else if (l==15) ocena = "-4";
+            else if (l==14) ocena = "3+";
+            else if (l==15) ocena = "4-";
             else if (l==16) ocena = "4";
-            else if (l==17) ocena = "+4";
-            else if (l>=18 && l<=19) ocena = "-5";
+            else if (l==17) ocena = "4+";
+            else if (l>=18 && l<=19) ocena = "5-";
 
             document.getElementById("test").innerHTML = "Ocena: "+ocena;
             alert("Twój wynik: [ "+ l +" / "+lp+" ] Ocena: "+ocena);
